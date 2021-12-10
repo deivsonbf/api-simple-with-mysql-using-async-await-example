@@ -9,4 +9,6 @@ router.get('/', defaultController.allUsers);
 // Rota POST
 router.post('/', defaultController.insertUserOntwoTable);
 
+router.get('/healthcheck', defaultController.healthCheck)
+
 module.exports = router;

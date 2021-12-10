@@ -1,6 +1,12 @@
 const mysql = require('../config');
 
 
+
+exports.healthCheck = (req, res) => {
+    res.json({ message: 'Working' })
+}
+
+
 // Rota GET
 exports.allUsers = async (req, res) => {
 
